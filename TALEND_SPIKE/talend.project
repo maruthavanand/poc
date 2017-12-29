@@ -158,6 +158,20 @@
       <relatedItems xmi:id="_C4FTPuyQEeeJefNqjDi1ZA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_C4FTP-yQEeeJefNqjDi1ZA" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_PiCRkOyaEee5va64MjJCzQ">
+      <baseItem xmi:id="_PiCRkeyaEee5va64MjJCzQ" id="_4G9HMOyZEee5va64MjJCzQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_PiCRkuyaEee5va64MjJCzQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRk-yaEee5va64MjJCzQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRlOyaEee5va64MjJCzQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRleyaEee5va64MjJCzQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRluyaEee5va64MjJCzQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRl-yaEee5va64MjJCzQ" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRmOyaEee5va64MjJCzQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRmeyaEee5va64MjJCzQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRmuyaEee5va64MjJCzQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRm-yaEee5va64MjJCzQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_PiCRnOyaEee5va64MjJCzQ" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <migrationTask xmi:id="_pLkOUOyLEee5va64MjJCzQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pLkOUeyLEee5va64MjJCzQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pLkOUuyLEee5va64MjJCzQ" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
