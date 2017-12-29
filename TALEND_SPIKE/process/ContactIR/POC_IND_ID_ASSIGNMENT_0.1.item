@@ -31,6 +31,7 @@
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
@@ -65,7 +66,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-20170623_1246-V6.4.1/TOS_DI-20170623_1246-V6.4.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Workspace/Remote_WS/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -113,10 +114,12 @@
     <routinesParameter id="_ajI_sNDcEeeUYZD1XgmjMg" name="TalendDate"/>
     <routinesParameter id="_ajSJpNDcEeeUYZD1XgmjMg" name="TalendStringUtil"/>
     <routinesParameter id="_ajSJoNDcEeeUYZD1XgmjMg" name="TalendString"/>
+    <routinesParameter id="_pSiZAOyLEee5va64MjJCzQ" name="SQLike"/>
+    <routinesParameter id="_8GJsMOyPEeeJefNqjDi1ZA" name="MDM"/>
   </parameters>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/POC_Script/ind_id_assignment_src.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/Script Sheets/ind_id_assignment_src.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
@@ -368,7 +371,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/POC_Script/Loop_DDL.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/Script Sheets/Loop_DDL.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
