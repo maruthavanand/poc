@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_PaFX0OyMEee5va64MjJCzQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_PaFX0eyMEee5va64MjJCzQ" comment="" name="EC2_Host" prompt="EC2_Host?" promptNeeded="false" type="id_String" value="10.241.4.84"/>
+  <contextParameter xmi:id="_PaFX0uyMEee5va64MjJCzQ" comment="" name="EC2_Port" prompt="EC2_Port?" promptNeeded="false" type="id_Integer" value="22"/>
+  <contextParameter xmi:id="_PaFX0-yMEee5va64MjJCzQ" comment="" name="EC2_Username" prompt="EC2_Username?" promptNeeded="false" type="id_String" value="nehruj"/>
+  <contextParameter xmi:id="_PaFX1OyMEee5va64MjJCzQ" comment="" name="EC2_Password" prompt="EC2_Password?" promptNeeded="false" type="id_Password" value="zwxLQhn8fB0wXxT+c3OAvg=="/>
+  <contextParameter xmi:id="_PaFX1eyMEee5va64MjJCzQ" comment="" name="EC2_RemDirectory" prompt="EC2_RemDirectory?" promptNeeded="false" type="id_String" value="/home/nehruj/talend"/>
+</talendfile:ContextType>

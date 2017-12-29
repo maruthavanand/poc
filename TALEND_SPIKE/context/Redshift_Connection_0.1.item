@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Pau4EOyMEee5va64MjJCzQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Pau4EeyMEee5va64MjJCzQ" comment="" name="Redshift_dev_Login" prompt="Redshift_dev_Login?" promptNeeded="false" type="id_String" value="parthasarathyr"/>
+  <contextParameter xmi:id="_Pau4EuyMEee5va64MjJCzQ" comment="" name="Redshift_dev_Port" prompt="Redshift_dev_Port?" promptNeeded="false" type="id_String" value="5439"/>
+  <contextParameter xmi:id="_Pau4E-yMEee5va64MjJCzQ" comment="" name="Redshift_dev_Schema" prompt="Redshift_dev_Schema?" promptNeeded="false" type="id_String" value="talend"/>
+  <contextParameter xmi:id="_Pau4FOyMEee5va64MjJCzQ" comment="" name="Redshift_dev_Server" prompt="Redshift_dev_Server?" promptNeeded="false" type="id_String" value="10.241.4.56"/>
+  <contextParameter xmi:id="_Pau4FeyMEee5va64MjJCzQ" comment="" name="Redshift_dev_Database" prompt="Redshift_dev_Database?" promptNeeded="false" type="id_String" value="dev"/>
+  <contextParameter xmi:id="_Pau4FuyMEee5va64MjJCzQ" comment="" name="Redshift_dev_AdditionalParams" prompt="Redshift_dev_AdditionalParams?" promptNeeded="false" type="id_String" value="tcpKeepAlive=true"/>
+  <contextParameter xmi:id="_Pau4F-yMEee5va64MjJCzQ" comment="" name="Redshift_dev_Password" prompt="Redshift_dev_Password?" promptNeeded="false" type="id_Password" value="hvV8EsWvFIsh8Sk0CUBhVw=="/>
+</talendfile:ContextType>

@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Redshift_dev_Login" prompt="Redshift_dev_Login?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="parthasarathyr"/>
+    <contextParameter comment="" name="Redshift_dev_Port" prompt="Redshift_dev_Port?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="5439"/>
+    <contextParameter comment="" name="Redshift_dev_Schema" prompt="Redshift_dev_Schema?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="talend"/>
+    <contextParameter comment="" name="Redshift_dev_Server" prompt="Redshift_dev_Server?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="10.241.4.56"/>
+    <contextParameter comment="" name="Redshift_dev_Database" prompt="Redshift_dev_Database?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="dev"/>
+    <contextParameter comment="" name="Redshift_dev_AdditionalParams" prompt="Redshift_dev_AdditionalParams?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="tcpKeepAlive=true"/>
+    <contextParameter comment="" name="Redshift_dev_Password" prompt="Redshift_dev_Password?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_Password" value="hvV8EsWvFIsh8Sk0CUBhVw=="/>
+    <contextParameter comment="" name="MM" prompt="MM?" promptNeeded="false" repositoryContextId="_WVfYIOPjEeed2bvhqEVQlw" type="id_String" value="12"/>
+    <contextParameter comment="" name="YYYY_MM" prompt="YYYY_MM?" promptNeeded="false" repositoryContextId="_WVfYIOPjEeed2bvhqEVQlw" type="id_String" value="2017-10"/>
+    <contextParameter comment="" name="YYYY" prompt="YYYY?" promptNeeded="false" repositoryContextId="_WVfYIOPjEeed2bvhqEVQlw" type="id_String" value="2017"/>
+    <contextParameter comment="" name="YYYYMMDD" prompt="YYYYMMDD?" promptNeeded="false" repositoryContextId="_WVfYIOPjEeed2bvhqEVQlw" type="id_String" value="20171218"/>
+    <contextParameter comment="" name="YYYYMM" prompt="YYYYMM?" promptNeeded="false" repositoryContextId="_WVfYIOPjEeed2bvhqEVQlw" type="id_String" value="201712"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="224" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-20170623_1246-V6.4.1/TOS_DI-20170623_1246-V6.4.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_ah8F0NDcEeeUYZD1XgmjMg" name="DataOperation"/>
+    <routinesParameter id="_aiiiwNDcEeeUYZD1XgmjMg" name="Mathematical"/>
+    <routinesParameter id="_aisTwNDcEeeUYZD1XgmjMg" name="Numeric"/>
+    <routinesParameter id="_ai1dsNDcEeeUYZD1XgmjMg" name="Relational"/>
+    <routinesParameter id="_ai1dtNDcEeeUYZD1XgmjMg" name="StringHandling"/>
+    <routinesParameter id="_ai_OsNDcEeeUYZD1XgmjMg" name="TalendDataGenerator"/>
+    <routinesParameter id="_ajI_sNDcEeeUYZD1XgmjMg" name="TalendDate"/>
+    <routinesParameter id="_ajSJpNDcEeeUYZD1XgmjMg" name="TalendStringUtil"/>
+    <routinesParameter id="_ajSJoNDcEeeUYZD1XgmjMg" name="TalendString"/>
+  </parameters>
+  <node componentName="tRedshiftConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_dev_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_dev_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_dev_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_dev_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu7Uf8kJe9KHmJtCJ9962gXY="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Redshift_dev_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="&quot;Shared_RS_Dev_Connection&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Redshift_Connection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_dev_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_dev_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_dev_Schema" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_dev_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu7Uf8kJe9KHmJtCJ9962gXY=" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Redshift_dev_AdditionalParams" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;set search_path to &quot; + context.Redshift_dev_Schema"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Setting Schema"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/POC_Script/Inbound/scr_inbound_aberdeen_ddl.sql&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value=""/>
+    <elementParameter field="TEXT" name="FOOTER" value=""/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Inbound Aberdeen DDL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputFullRow_1">
+      <column comment="" key="false" length="-1" name="Query" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_dev_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_dev_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_dev_Schema" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_dev_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu7Uf8kJe9KHmJtCJ9962gXY=" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;ALTER TABLE talend_tri_partner_segment_abdn_at_biz_intel_full RENAME TO _2017_10_talend_tri_partner_segment_abdn_at_biz_intel_full;&#xD;&#xA;ALTER TABLE talend_tri_partner_segment_abdn_at_tech_installs_full RENAME TO _2017_10_talend_tri_partner_segment_abdn_at_tech_installs_full;&#xD;&#xA;&#xD;&#xA;CREATE TABLE talend_tri_partner_segment_abdn_at_biz_intel_full &#xD;&#xA;(&#xD;&#xA;  SITEID                             VARCHAR(20),&#xD;&#xA;  PRIMARY_DUNS_NUMBER                VARCHAR(9) distkey sortkey,&#xD;&#xA;  COMPANY                            VARCHAR(256),&#xD;&#xA;  ADDRESS                            VARCHAR(1000),&#xD;&#xA;  STREET                             VARCHAR(1000),&#xD;&#xA;  STREET2                            VARCHAR(1000),&#xD;&#xA;  COUNTY_PROVINCE                    VARCHAR(100),&#xD;&#xA;  CITY                               VARCHAR(100),&#xD;&#xA;  STATE                              VARCHAR(100),&#xD;&#xA;  ZIPCODE                            VARCHAR(20),&#xD;&#xA;  COUNTRY                            VARCHAR(100),&#xD;&#xA;  PHONE                              VARCHAR(20),&#xD;&#xA;  EMPLE                              INTEGER,&#xD;&#xA;  REVEN                              INTEGER,&#xD;&#xA;  SALESFORCE                         INTEGER,&#xD;&#xA;  MOBILE_WORKERS                     INTEGER,&#xD;&#xA;  HOMEPAGEURL                        VARCHAR(256),&#xD;&#xA;  SICGRP                             VARCHAR(20),&#xD;&#xA;  SICSUBGROUP                        VARCHAR(20),&#xD;&#xA;  SIC4_CODE                          VARCHAR(1000),&#xD;&#xA;  SIC4_DESC                          VARCHAR(256),&#xD;&#xA;  NAICS6_CODE                        VARCHAR(1000),&#xD;&#xA;  NAICS6_DESC                        VARCHAR(256),&#xD;&#xA;  GOVTLEVEL                          VARCHAR(256),&#xD;&#xA;  CMSA                               INTEGER,&#xD;&#xA;  MSA                                INTEGER,&#xD;&#xA;  METRO_NAME                         VARCHAR(256),&#xD;&#xA;  CORPHDQ                            VARCHAR(100),&#xD;&#xA;  IT_STAFF                           VARCHAR(256),&#xD;&#xA;  WIRELESS_USERS                     INTEGER,&#xD;&#xA;  INTERNET_USERS                     VARCHAR(256),&#xD;&#xA;  TABLETS                            INTEGER,&#xD;&#xA;  PCS                                INTEGER,&#xD;&#xA;  DESKTOPS                           INTEGER,&#xD;&#xA;  LAPTOPS                            INTEGER,&#xD;&#xA;  WORKSTATIONS                       INTEGER,&#xD;&#xA;  SERVERS                            INTEGER,&#xD;&#xA;  PRINTERS                           INTEGER,&#xD;&#xA;  DESKTOP_PRINTERS                   INTEGER,&#xD;&#xA;  NETWORK_PRINTERS                   INTEGER,&#xD;&#xA;  COLOR_PRINTERS                     INTEGER,&#xD;&#xA;  MULTIFUNC_PRINTERS                 INTEGER,&#xD;&#xA;  STORAGE                            VARCHAR(256),&#xD;&#xA;  SMARTPHONE_USERS                   INTEGER,&#xD;&#xA;  CALLCENTER_CALLERS                 INTEGER,&#xD;&#xA;  NETWORK_LINES                      INTEGER,&#xD;&#xA;  IT_BUDGET                          BIGINT,&#xD;&#xA;  HARDWARE_BUDGET                    BIGINT,&#xD;&#xA;  PC_BUDGET                          BIGINT,&#xD;&#xA;  SERVER_BUDGET                      BIGINT,&#xD;&#xA;  PERIPHERAL_BUDGET                  BIGINT,&#xD;&#xA;  OTHER_HARDWARE_BUDGET              BIGINT,&#xD;&#xA;  STORAGE_BUDGET                     BIGINT,&#xD;&#xA;  COMM_BUDGET                        BIGINT,&#xD;&#xA;  SOFTWARE_BUDGET                    BIGINT,&#xD;&#xA;  SERVICES_BUDGET                    BIGINT,&#xD;&#xA;  ENT_ID                             VARCHAR(100),&#xD;&#xA;  ENT_COMPANY                        VARCHAR(1000),&#xD;&#xA;  ENT_EMPLE                          VARCHAR(20),&#xD;&#xA;  ENT_REVEN                          VARCHAR(256),&#xD;&#xA;  ENT_IT_EMPLE                       VARCHAR(256),&#xD;&#xA;  ENT_WIRELESS_USERS                 VARCHAR(256),&#xD;&#xA;  ENT_INTERNET_USERS                 VARCHAR(256),&#xD;&#xA;  ENT_TABLETS                        VARCHAR(256),&#xD;&#xA;  ENT_PC                             VARCHAR(256),&#xD;&#xA;  ENT_DESKTOP                        VARCHAR(256),&#xD;&#xA;  ENT_LAPTOP                         VARCHAR(256),&#xD;&#xA;  ENT_WORKSTATIONS                   VARCHAR(256),&#xD;&#xA;  ENT_SERVER                         VARCHAR(256),&#xD;&#xA;  ENT_PRINTER                        VARCHAR(256),&#xD;&#xA;  ENT_DESKTOP_PRINTERS               VARCHAR(256),&#xD;&#xA;  ENT_NETWORK_PRINTERS               VARCHAR(256),&#xD;&#xA;  ENT_STORAGE                        VARCHAR(256),&#xD;&#xA;  ENT_SMARTPHONE_USERS               VARCHAR(100),&#xD;&#xA;  ENT_NETWORKLINES                   INTEGER,&#xD;&#xA;  ENT_IT_BUDGET                      VARCHAR(100),&#xD;&#xA;  ENT_HARDWARE_BUDGET                VARCHAR(100),&#xD;&#xA;  ENT_PC_BUDGET                      VARCHAR(100),&#xD;&#xA;  ENT_SERVER_BUDGET                  VARCHAR(100),&#xD;&#xA;  ENT_PERIPHERAL_BUDGET              VARCHAR(100),&#xD;&#xA;  ENT_OTHER_HARDWARE_BUDGET          VARCHAR(100),&#xD;&#xA;  ENT_STORAGE_BUDGET                 VARCHAR(100),&#xD;&#xA;  ENT_COMM_BUDGET                    VARCHAR(100),&#xD;&#xA;  ENT_SOFTWARE_BUDGET                VARCHAR(100),&#xD;&#xA;  ENT_SERVICES_BUDGET                VARCHAR(100),&#xD;&#xA;  DESKTOP_VIRTUALIZATION_PRES        BOOLEAN,&#xD;&#xA;  DESKTOP_3YR_PRES                   BOOLEAN,&#xD;&#xA;  LAPTOP_3YR_PRES                    BOOLEAN,&#xD;&#xA;  IBM_MIDRANGE_PRES                  BOOLEAN,&#xD;&#xA;  UNIX_RISC_SVR_PRES                 BOOLEAN,&#xD;&#xA;  IBMPCM_PRES                        BOOLEAN,&#xD;&#xA;  COLOR_PRINTER_PRES                 BOOLEAN,&#xD;&#xA;  MULTIFUNCTION_PRINTER_PRES         BOOLEAN,&#xD;&#xA;  HIGHVOLUME_PRINTER_PRES            BOOLEAN,&#xD;&#xA;  UPS_PRES                           BOOLEAN,&#xD;&#xA;  SURVEILLANCE_PRES                  BOOLEAN,&#xD;&#xA;  OUTSOURCE_SERVER_MAINT_PRES        BOOLEAN,&#xD;&#xA;  OUTSOURCE_HARDWARE_MAINT_PRES      BOOLEAN,&#xD;&#xA;  OUTSOURCE_DATACENTER_MGMT_PRES     BOOLEAN,&#xD;&#xA;  OUTSOURCE_HARDWARE_SERVICES_PRES   BOOLEAN,&#xD;&#xA;  STORAGE_VIRTUALIZATION_PRES        BOOLEAN,&#xD;&#xA;  OUTSOURCE_DISASTER_RECOVERY_PRES   BOOLEAN,&#xD;&#xA;  OUTSOURCE_STORAGE_MGMT_PRES        BOOLEAN,&#xD;&#xA;  PBX_PRES                           BOOLEAN,&#xD;&#xA;  UNIFIED_COMM_SERVICE_PRES          BOOLEAN,&#xD;&#xA;  CALLCENTER_PRES                    BOOLEAN,&#xD;&#xA;  HANDSET_SMARTPHONE_PRES            BOOLEAN,&#xD;&#xA;  CELL_DATASERVICE_PRES              BOOLEAN,&#xD;&#xA;  OUTSOURCE_PHONE_MAINT_PRES         BOOLEAN,&#xD;&#xA;  NETWORK_LINE_PRES                  BOOLEAN,&#xD;&#xA;  VIDEO_CONF_SERVICE_PRES            BOOLEAN,&#xD;&#xA;  SWITCH_PRES                        BOOLEAN,&#xD;&#xA;  VPN_PRES                           BOOLEAN,&#xD;&#xA;  NETWORK_SERVICE_PRES               BOOLEAN,&#xD;&#xA;  SONET_PRES                         BOOLEAN,&#xD;&#xA;  OUTSOURCE_LAN_SERVICES_PRES        BOOLEAN,&#xD;&#xA;  OUTSOURCE_FIREWALL_MAINT_PRES      BOOLEAN,&#xD;&#xA;  OUTSOURCE_IDS_MAINT_PRES           BOOLEAN,&#xD;&#xA;  OUTSOURCE_WAN_SERVICES_PRES        BOOLEAN,&#xD;&#xA;  ASSET_MGMT_SW_PRES                 BOOLEAN,&#xD;&#xA;  ENTERPRISE_MGMT_SW_PRES            BOOLEAN,&#xD;&#xA;  IDACCESS_SW_PRES                   BOOLEAN,&#xD;&#xA;  APPLICATION_SERVER_SW_PRES         BOOLEAN,&#xD;&#xA;  BUSINESS_INTEL_SW_PRES             BOOLEAN,&#xD;&#xA;  COLLABORATIVE_SW_PRES              BOOLEAN,&#xD;&#xA;  CRM_SW_PRES                        BOOLEAN,&#xD;&#xA;  DOC_MGMT_SW_PRES                   BOOLEAN,&#xD;&#xA;  APP_CONSOLIDATION_SW_PRES          BOOLEAN,&#xD;&#xA;  ERP_SW_PRES                        BOOLEAN,&#xD;&#xA;  ACCOUNTING_SW_PRES                 BOOLEAN,&#xD;&#xA;  HUMAN_RES_SW_PRES                  BOOLEAN,&#xD;&#xA;  SUPPLY_CHAIN_SW_PRES               BOOLEAN,&#xD;&#xA;  WEB_PORTAL_SW_PRES                 BOOLEAN,&#xD;&#xA;  DBMS_PRES                          BOOLEAN,&#xD;&#xA;  DATAWAREHOUSE_SW_PRES              BOOLEAN,&#xD;&#xA;  SW_AS_A_SERVICE_PRES               BOOLEAN,&#xD;&#xA;  SW_AS_A_SERVICE_ERP_PRES           BOOLEAN,&#xD;&#xA;  SW_AS_A_SERVICE_CRM_PRES           BOOLEAN,&#xD;&#xA;  SW_AS_A_SERVICE_STORAGE_PRES       BOOLEAN,&#xD;&#xA;  SW_AS_A_SERVICE_EMAIL_PRES         BOOLEAN,&#xD;&#xA;  SW_AS_A_SERVICE_OTHER_PRES         BOOLEAN,&#xD;&#xA;  GOOGLE_APP_PRES                    BOOLEAN,&#xD;&#xA;  DEVELOPMENT_SW_PRES                BOOLEAN,&#xD;&#xA;  WORKFLOW_SW_PRES                   BOOLEAN,&#xD;&#xA;  SECURITY_SW_PRES                   BOOLEAN,&#xD;&#xA;  GROUPWARE_SW_PRES                  BOOLEAN,&#xD;&#xA;  ECOMMERCE_PRES                     BOOLEAN,&#xD;&#xA;  OUTSOURCE_SW_SERVICES_PRES         BOOLEAN,&#xD;&#xA;  ECOMMERCE_TYPE                     VARCHAR(256),&#xD;&#xA;  TABLET_ILS                         SMALLINT,&#xD;&#xA;  WORKSTATION_ILS                    SMALLINT,&#xD;&#xA;  SERVER_VIRTUALIZATION_ILS          SMALLINT,&#xD;&#xA;  APPLICATION_SERVER_ILS             SMALLINT,&#xD;&#xA;  DATABASE_SERVER_ILS                SMALLINT,&#xD;&#xA;  EMAIL_SERVER_ILS                   SMALLINT,&#xD;&#xA;  FILE_PRINT_SERVER_ILS              SMALLINT,&#xD;&#xA;  WEB_SERVER_ILS                     SMALLINT,&#xD;&#xA;  DAS_ILS                            SMALLINT,&#xD;&#xA;  NAS_ILS                            SMALLINT,&#xD;&#xA;  SAN_ILS                            SMALLINT,&#xD;&#xA;  TAPE_LIBRARY_ILS                   SMALLINT,&#xD;&#xA;  STORAGE_MGMT_SW_ILS                SMALLINT,&#xD;&#xA;  VOIP_ILS                           SMALLINT,&#xD;&#xA;  T1T3_ILS                           SMALLINT,&#xD;&#xA;  OCX_ILS                            SMALLINT,&#xD;&#xA;  ROUTER_ILS                         SMALLINT,&#xD;&#xA;  WAN_ILS                            SMALLINT,&#xD;&#xA;  ATM_FRAME_RELAY_ILS                SMALLINT,&#xD;&#xA;  MPLS_ILS                           SMALLINT,&#xD;&#xA;  METRO_ILS                          SMALLINT,&#xD;&#xA;  WIRELESS_LAN_ILS                   SMALLINT,&#xD;&#xA;  CRM_SW_ILS                         SMALLINT,&#xD;&#xA;  DOC_MGMT_SW_ILS                    SMALLINT,&#xD;&#xA;  CLOUD_COMPUTING_ILS                SMALLINT,&#xD;&#xA;  PCS_PLS                            SMALLINT,&#xD;&#xA;  LAPTOP_PLS                         SMALLINT,&#xD;&#xA;  WORKSTATION_PLS                    SMALLINT,&#xD;&#xA;  TABLET_PLS                         SMALLINT,&#xD;&#xA;  DESKTOP_VIRTUALIZATION_PLS         SMALLINT,&#xD;&#xA;  WINDOWS7_ADOPTION_PLS              SMALLINT,&#xD;&#xA;  CLOUD_COMPUTING_PLS                SMALLINT,&#xD;&#xA;  INFRASTRUCTURE_AS_A_SERVICE_PLS    SMALLINT,&#xD;&#xA;  PLATFORM_AS_A_SERVICE_PLS          SMALLINT,&#xD;&#xA;  SERVER_PLS                         SMALLINT,&#xD;&#xA;  SERVER_OS_PLS                      SMALLINT,&#xD;&#xA;  SERVER_VIRTUALIZATION_PLS          SMALLINT,&#xD;&#xA;  HIGHVOLUME_PRINTER_PLS             SMALLINT,&#xD;&#xA;  UPS_3PHASE_PLS                     SMALLINT,&#xD;&#xA;  DAS_PLS                            SMALLINT,&#xD;&#xA;  NAS_PLS                            SMALLINT,&#xD;&#xA;  SAN_PLS                            SMALLINT,&#xD;&#xA;  STORAGE_CAPACITY_EXPANSION_PLS     SMALLINT,&#xD;&#xA;  STORAGE_VIRTUALIZATION_PLS         SMALLINT,&#xD;&#xA;  STORAGE_MGMT_SW_PLS                SMALLINT,&#xD;&#xA;  UCS_PLS                            SMALLINT,&#xD;&#xA;  VOIP_PLS                           SMALLINT,&#xD;&#xA;  SMARTPHONE_PLS                     SMALLINT,&#xD;&#xA;  NETWORK_LINE_PLS                   SMALLINT,&#xD;&#xA;  WIRELESS_LAN_PLS                   SMALLINT,&#xD;&#xA;  NETWORK_SERVICES_PLS               SMALLINT,&#xD;&#xA;  COMPLIANCE_PLS                     SMALLINT,&#xD;&#xA;  DATA_LOSS_PREVENTION_PLS           SMALLINT,&#xD;&#xA;  MESSAGING_SECURITY_PLS             SMALLINT,&#xD;&#xA;  SECURITY_SW_PLS                    SMALLINT,&#xD;&#xA;  ASSET_MGMT_SW_PLS                  SMALLINT,&#xD;&#xA;  ENTERPRISE_MGMT_SW_PLS             SMALLINT,&#xD;&#xA;  ERP_SW_PLS                         SMALLINT,&#xD;&#xA;  SOFTWARE_AS_A_SERVICE_PLS          SMALLINT,&#xD;&#xA;  ANTIVIRUS_SW_PLS                   SMALLINT,&#xD;&#xA;  DIGITAL_SIGNAGE_PLS                SMALLINT&#xD;&#xA;);&#xD;&#xA;&#xD;&#xA;CREATE TABLE talend_tri_partner_segment_abdn_at_tech_installs_full &#xD;&#xA;(&#xD;&#xA;  siteid                VARCHAR(20),&#xD;&#xA;  primary_duns_number   VARCHAR(9) distkey sortkey,&#xD;&#xA;  classs                 VARCHAR(5),&#xD;&#xA;  subclass              VARCHAR(10),&#xD;&#xA;  manufucturer          VARCHAR(256),&#xD;&#xA;  model                 VARCHAR(256)&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="Qry"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftRow_2">
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRedshiftCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftCommit_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftCommit_1">
+      <column comment="" key="false" length="-1" name="iteration" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="record_count" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ind_id_count" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_cluster_id" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_cluster_size" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Qry"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tRedshiftRow_2_QUERY&quot;))"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="Time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Qry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Query Log"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="Time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRedshiftClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftClose_2" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRedshiftBulkExec" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftBulkExec_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;talend_tri_partner_segment_abdn_at_tech_installs_full&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_SOURCE_TYPE" value="S3"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY" value="&quot;AKIAJDTZSM634KQQEOEQ&quot;"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY" value="lrKVVRdZzEqsGC7nW3/cbUMmMii5s/omwgaSPmEtQLDeCrTIgv23RIKoHvImyGD4"/>
+    <elementParameter field="TEXT" name="BUCKET" value="&quot;as-source-files&quot;"/>
+    <elementParameter field="TEXT" name="KEY" value="&quot;aberdeen/2017-11/TechInstall_112017.csv.gz&quot;"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_EMR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_EMR" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="EMR_CLUSTER_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDFS_FILEPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_DYNAMODB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_DYNAMODB" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="TABLENAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="READRATIO" value="50" show="false"/>
+    <elementParameter field="TEXT" name="ACCESS_KEY_SSH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SECRET_KEY_SSH" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="BUCKET_SSH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KEY_SSH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORT_TYPE" value="DELIMITED_OR_CSV"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="','"/>
+    <elementParameter field="OPENED_LIST" name="TEXT_ENCLOSURE" value="EMPTY"/>
+    <elementParameter field="TEXT" name="JSON_MAPPING" value="&quot;s3://jsonpaths_file&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIXEDWIDTH_MAPPING" value="&quot;column1:8,column2:64&quot;" show="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP"/>
+    <elementParameter field="CHECK" name="ENCRYPT" value="false"/>
+    <elementParameter field="TEXT" name="ENCRYPTED_KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="ENCODING" value="&quot;UTF8&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DATEFORMAT" value="NONE"/>
+    <elementParameter field="TEXT" name="DATE_PATTERN" value="&quot;YYYY-MM-DD&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="TIMEFORMAT" value="NONE"/>
+    <elementParameter field="TEXT" name="TIME_PATTERN" value="&quot;YYYY-MM-DD HH:MI:SS&quot;" show="false"/>
+    <elementParameter field="TABLE" name="OTHER_CONFIGURATION"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftBulkExec_1">
+      <column comment="" key="false" length="20" name="siteid" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="primary_duns_number" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="classs" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="subclass" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="manufucturer" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="model" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="256" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRedshiftCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftCommit_2" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftCommit_2">
+      <column comment="" key="false" length="-1" name="iteration" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="record_count" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ind_id_count" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_cluster_id" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_cluster_size" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/POC_Script/Inbound/scr_nbound_aberdeen_copy_ddl.sql&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;;;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value=""/>
+    <elementParameter field="TEXT" name="FOOTER" value=""/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Inbound Aberdeen Copy"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputFullRow_2">
+      <column comment="" key="false" length="-1" name="Query" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_2" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_2"/>
+  </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Redshift_dev_Server" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Redshift_dev_Port" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_dev_Database" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_dev_Schema" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.Redshift_dev_Login" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu7Uf8kJe9KHmJtCJ9962gXY=" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="row1.Query"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="Qry"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftRow_3">
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time"/>
+      <elementValue elementRef="VALUE" value="TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, TalendDate.getDate(&quot;yyyy-MM-dd HH:mm:ss&quot;))"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Qry"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tRedshiftRow_2_QUERY&quot;))"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_2">
+      <column comment="" key="false" length="-1" name="Time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Qry"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Query Log"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="Time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Qry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftConnection_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftConnection_1" target="tRedshiftRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tFileInputFullRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileInputFullRow_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputFullRow_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_1" target="tRedshiftCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tRedshiftRow_2">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftRow_2" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_2" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRedshiftCommit_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftCommit_1" target="tFileInputFullRow_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Logging" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CurVal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Time"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Logging" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputFullRow_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_2" target="tFlowToIterate_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputFullRow_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_2" target="tRedshiftCommit_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk5" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_2" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_2" target="tRedshiftRow_3">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftRow_3" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_3" target="tFixedFlowInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CurVal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Time"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Creating Tables"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftCommit_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Logging Queries"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftClose_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftBulkExec_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftCommit_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Copy from S3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Logging Queries"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

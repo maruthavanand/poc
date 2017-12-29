@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_PahcsOyMEee5va64MjJCzQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_PahcseyMEee5va64MjJCzQ" comment="" name="YYYY" prompt="YYYY?" promptNeeded="false" type="id_String" value="2017"/>
+  <contextParameter xmi:id="_PahcsuyMEee5va64MjJCzQ" comment="" name="MM" prompt="MM?" promptNeeded="false" type="id_String" value="12"/>
+  <contextParameter xmi:id="_Pahcs-yMEee5va64MjJCzQ" comment="" name="YYYYMM" prompt="YYYYMM?" promptNeeded="false" type="id_String" value="201712"/>
+  <contextParameter xmi:id="_PahctOyMEee5va64MjJCzQ" comment="" name="YYYY_MM" prompt="YYYY_MM?" promptNeeded="false" type="id_String" value="2017-10"/>
+  <contextParameter xmi:id="_PahcteyMEee5va64MjJCzQ" comment="" name="YYYYMMDD" prompt="YYYYMMDD?" promptNeeded="false" type="id_String" value="20171218"/>
+</talendfile:ContextType>
