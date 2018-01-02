@@ -237,7 +237,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="896">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;\opt\Talend-6.4.1\ScriptSheets\assign_retain_cluster_src.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/Talend-6.4.1/ScriptSheets/assign_retain_cluster_src.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
