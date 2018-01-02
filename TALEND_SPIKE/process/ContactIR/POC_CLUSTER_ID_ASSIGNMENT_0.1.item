@@ -430,7 +430,7 @@
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
     <elementParameter field="MEMO_SQL" name="QUERY" value="row3.Query"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
-    <elementParameter field="FILE" name="LOG_FILE" value="&quot;C:/Talend/TOS_DI-20170623_1246-V6.4.1/TOS_DI-20170623_1246-V6.4.1/workspace/redshift-jdbc.log&quot;"/>
+    <elementParameter field="FILE" name="LOG_FILE" value="&quot;/opt/Talend-6.4.1/ScriptSheets/redshift-jdbc.log&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
