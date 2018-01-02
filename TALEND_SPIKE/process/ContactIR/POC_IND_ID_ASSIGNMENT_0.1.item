@@ -119,7 +119,7 @@
   </parameters>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/Talend-6.4.1/ScriptSheets/ind_id_assignment_src.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;\opt\Talend-6.4.1\ScriptSheets\ind_id_assignment_src.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
@@ -371,7 +371,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/Talend-6.4.1/ScriptSheets/Loop_DDL.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;\opt\Talend-6.4.1\ScriptSheets\Loop_DDL.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
