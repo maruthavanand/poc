@@ -9,6 +9,7 @@
     <contextParameter comment="" name="Redshift_dev_AdditionalParams" prompt="Redshift_dev_AdditionalParams?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_String" value="tcpKeepAlive=true"/>
     <contextParameter comment="" name="Redshift_dev_Password" prompt="Redshift_dev_Password?" promptNeeded="false" repositoryContextId="_hsT3cNEAEeed2bvhqEVQlw" type="id_Password" value="hvV8EsWvFIsh8Sk0CUBhVw=="/>
     <contextParameter comment="" name="ind_id_log_table" prompt="ind_id_log_table?" promptNeeded="false" type="id_String" value="ind_id_log_201712"/>
+    <contextParameter comment="" name="scr_init_asgnmt_id" prompt="scr_init_asgnmt_id?" promptNeeded="false" type="id_String" value="/opt/Talend-6.4.1/ScriptSheets/initiate_assignment_id_scr.sql"/>
   </context>
   <parameters>
     <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" value="true" show="false"/>
@@ -390,7 +391,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_3" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;\\opt\\Talend-6.4.1\\ScriptSheets\\ind_id_assignment_src.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/Talend-6.4.1/ScriptSheets/ind_id_assignment_src.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
