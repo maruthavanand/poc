@@ -113,6 +113,8 @@
       <relatedItems xmi:id="_C4FTFuyQEeeJefNqjDi1ZA" id="TalendDataGenerator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_C4FTF-yQEeeJefNqjDi1ZA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_C4FTGOyQEeeJefNqjDi1ZA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_w1kqMPRuEeeZSMaItgorEA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_w1kqMfRuEeeZSMaItgorEA" id="MDM" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_C4FTGeyQEeeJefNqjDi1ZA">
       <baseItem xmi:id="_C4FTGuyQEeeJefNqjDi1ZA" id="_hhN18NaLEeed2bvhqEVQlw" version="0.1" type="job"/>

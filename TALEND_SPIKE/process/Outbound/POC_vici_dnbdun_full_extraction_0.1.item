@@ -36,6 +36,7 @@
     <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
     <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
     <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
     <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
     <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
@@ -70,7 +71,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/TOS_DI-20170623_1246-V6.4.1/TOS_DI-20170623_1246-V6.4.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/Workspace/Remote_WS/.metadata&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -118,6 +119,8 @@
     <routinesParameter id="_ajI_sNDcEeeUYZD1XgmjMg" name="TalendDate"/>
     <routinesParameter id="_ajSJpNDcEeeUYZD1XgmjMg" name="TalendStringUtil"/>
     <routinesParameter id="_ajSJoNDcEeeUYZD1XgmjMg" name="TalendString"/>
+    <routinesParameter id="_8GJsMOyPEeeJefNqjDi1ZA" name="MDM"/>
+    <routinesParameter id="_pSiZAOyLEee5va64MjJCzQ" name="SQLike"/>
   </parameters>
   <node componentName="tRedshiftUnload" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftUnload_1" show="false"/>
@@ -217,7 +220,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="0">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/POC_Script/Outbound/scr_vici_dnbdun_full_extraction.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/Talend-6.4.1/ScriptSheets//Outbound/scr_vici_dnbdun_full_extraction.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
@@ -402,7 +405,7 @@
   </node>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/Desktop/POC_Script/Outbound/scr_vici_dnbdun_full_extraction_unload.sql&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/opt/Talend-6.4.1/ScriptSheets//Outbound/scr_vici_dnbdun_full_extraction_unload.sql&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;;;&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
