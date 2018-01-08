@@ -129,7 +129,7 @@
     <elementParameter field="TEXT" name="STEP" value="i++" show="false"/>
     <elementParameter field="CHECK" name="INCREASE" value="true" show="false"/>
     <elementParameter field="TEXT" name="DECLARATION" value="int i=0"/>
-    <elementParameter field="TEXT" name="CONDITION" value="i&lt;2 &amp;&amp; !((BigDecimal)globalMap.get(&quot;vCurVal&quot;)).equals((BigDecimal)globalMap.get(&quot;vPreVal&quot;))"/>
+    <elementParameter field="TEXT" name="CONDITION" value="i&lt;25 &amp;&amp; !((BigDecimal)globalMap.get(&quot;vCurVal&quot;)).equals((BigDecimal)globalMap.get(&quot;vPreVal&quot;))"/>
     <elementParameter field="TEXT" name="ITERATION" value="i++"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
