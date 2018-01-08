@@ -306,8 +306,8 @@
     <elementParameter field="CHECK" name="LISTALL" value="false"/>
     <elementParameter field="TEXT" name="OBJECTS_PREFIX" value="&quot;Test_vici/dnbdun/2017-12/dunslookup_1_20171211_&quot;" show="false"/>
     <elementParameter field="TABLE" name="BUCKETS">
-      <elementValue elementRef="BUCKET_NAME" value="&quot;smp-extract&quot;"/>
-      <elementValue elementRef="OBJECT_PREFIX" value="&quot;Test_vici/dnbdun/&quot; + context.YYYY_MM + &quot;/dunslookup_&quot; + context.Vers + &quot;_&quot; + context.YYYYMMDD + &quot;_&quot;"/>
+      <elementValue elementRef="BUCKET_NAME" value="&quot;LandingZone&quot;"/>
+      <elementValue elementRef="OBJECT_PREFIX" value="&quot;TalendPoc/dnbdun/&quot; + context.YYYY_MM + &quot;/dunslookup_&quot; + context.Vers + &quot;_&quot; + context.YYYYMMDD + &quot;_&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
@@ -338,7 +338,7 @@
     <elementParameter field="FILE" name="ENCRYPTED_KEY_X509" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PUBLIC_KEY" value="&quot;&quot;" show="false"/>
     <elementParameter field="FILE" name="PRIVATE_KEY" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="BUCKET" value="&quot;smp-extract&quot;"/>
+    <elementParameter field="TEXT" name="BUCKET" value="&quot;LandingZone&quot;"/>
     <elementParameter field="TEXT" name="KEY" value="((String)globalMap.get(&quot;tS3List_1_CURRENT_KEY&quot;))"/>
     <elementParameter field="FILE" name="FILE" value="&quot;/opt/Talend-6.4.1/AudienceSolution/Outbound/&quot; + ((String)globalMap.get(&quot;tS3List_1_CURRENT_KEY&quot;))"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
